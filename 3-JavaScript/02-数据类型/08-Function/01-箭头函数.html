@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        // 特殊语句
+        /* function foo(el){
+            console.log(el,this.id);
+        }
+        var obj = {
+            id:'aweso'
+        }
+         
+        var nums = [1,2,3]
+        console.log(nums.forEach(foo,obj)); */
+        // 函数调用函数时:和函数的定义位置没关系和调用位置有关系
+        var a = "sdfasdfsafa"
+        function foo(){
+            console.log('aaaaaa');
+        }
+        function bar(){
+            console.log('bbbbbb');
+            foo()
+        }
+        console.log(bar());
+    </script> -->
+    <script>
+        var ary =[12,13];
+        function fn(){
+            console.log(ary);
+            ary[0] = 100;
+            ary = [100];
+            ary[0] = 0;
+            console.log(ary);
+        }
+        fn(ary);
+        console.log(ary);
+    </script>
+        
+
+</body>
+</html>
